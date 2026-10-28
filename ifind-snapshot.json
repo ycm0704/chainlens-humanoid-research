@@ -1,0 +1,2191 @@
+{
+  "format": "chainlens-ifind-v1",
+  "capturedAt": "2026-10-28T09:56:50Z",
+  "provider": "iFinD MCP",
+  "mode": "MCP 实际取数 · 本地快照",
+  "financials": [
+    {
+      "id": "annual:green:2024-12-31",
+      "company": "green",
+      "ticker": "688017.SH",
+      "name": "绿的谐波",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "3.8741亿",
+          "value": 387410000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "5616.815万",
+          "value": 56168150,
+          "quantum": 10,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "2798.1462万",
+          "value": 27981462,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:green:2025-03-31",
+      "company": "green",
+      "ticker": "688017.SH",
+      "name": "绿的谐波",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-03-31",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "9802.6542万",
+          "value": 98026542,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "2024.8432万",
+          "value": 20248432,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "1715.0027万",
+          "value": 17150027,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:green:2025-06-30",
+      "company": "green",
+      "ticker": "688017.SH",
+      "name": "绿的谐波",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "2.5141亿",
+          "value": 251410000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "5341.6376万",
+          "value": 53416376,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "4679.6095万",
+          "value": 46796095,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:green:2025-09-30",
+      "company": "green",
+      "ticker": "688017.SH",
+      "name": "绿的谐波",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-09-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "4.0665亿",
+          "value": 406650000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "9366.7349万",
+          "value": 93667349,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "1.1027亿",
+          "value": 110270000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:green:2025-12-31",
+      "company": "green",
+      "ticker": "688017.SH",
+      "name": "绿的谐波",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "5.7071亿",
+          "value": 570710000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "1.2437亿",
+          "value": 124370000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "1.52亿",
+          "value": 152000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:inovance:2024-12-31",
+      "company": "inovance",
+      "ticker": "300124.SZ",
+      "name": "汇川技术",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "370.4095亿",
+          "value": 37040950000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "42.8549亿",
+          "value": 4285490000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "72.0044亿",
+          "value": 7200440000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:inovance:2025-03-31",
+      "company": "inovance",
+      "ticker": "300124.SZ",
+      "name": "汇川技术",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-03-31",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "89.7791亿",
+          "value": 8977910000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "13.2283亿",
+          "value": 1322830000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "2.6255亿",
+          "value": 262550000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:inovance:2025-06-30",
+      "company": "inovance",
+      "ticker": "300124.SZ",
+      "name": "汇川技术",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "205.0936亿",
+          "value": 20509360000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "29.6839亿",
+          "value": 2968390000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "30.2007亿",
+          "value": 3020070000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:inovance:2025-09-30",
+      "company": "inovance",
+      "ticker": "300124.SZ",
+      "name": "汇川技术",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-09-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "316.6261亿",
+          "value": 31662610000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "42.5413亿",
+          "value": 4254130000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "39.3066亿",
+          "value": 3930660000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:inovance:2025-12-31",
+      "company": "inovance",
+      "ticker": "300124.SZ",
+      "name": "汇川技术",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "451.0484亿",
+          "value": 45104840000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "50.5亿",
+          "value": 5050000000,
+          "quantum": 10000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "66.8103亿",
+          "value": 6681030000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:moons:2024-12-31",
+      "company": "moons",
+      "ticker": "603728.SH",
+      "name": "鸣志电器",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "24.1593亿",
+          "value": 2415930000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "7790.6962万",
+          "value": 77906962,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "2.4615亿",
+          "value": 246150000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:moons:2025-03-31",
+      "company": "moons",
+      "ticker": "603728.SH",
+      "name": "鸣志电器",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-03-31",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "5.9531亿",
+          "value": 595310000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "718.9294万",
+          "value": 7189294,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "586.1919万",
+          "value": 5861919,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:moons:2025-06-30",
+      "company": "moons",
+      "ticker": "603728.SH",
+      "name": "鸣志电器",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "13.1458亿",
+          "value": 1314580000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "2695.4479万",
+          "value": 26954479,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "5056.3196万",
+          "value": 50563196,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:moons:2025-09-30",
+      "company": "moons",
+      "ticker": "603728.SH",
+      "name": "鸣志电器",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-09-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "20.4312亿",
+          "value": 2043120000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "4983.7948万",
+          "value": 49837948,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "1.1137亿",
+          "value": 111370000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:moons:2025-12-31",
+      "company": "moons",
+      "ticker": "603728.SH",
+      "name": "鸣志电器",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "27.6198亿",
+          "value": 2761980000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "6112.7989万",
+          "value": 61127989,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "2.1971亿",
+          "value": 219710000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:orbbec:2024-12-31",
+      "company": "orbbec",
+      "ticker": "688322.SH",
+      "name": "奥比中光",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "5.6446亿",
+          "value": 564460000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "-62906948.02",
+          "value": -62906948.02,
+          "quantum": 0.01,
+          "approximate": false,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "-86340242.72",
+          "value": -86340242.72,
+          "quantum": 0.01,
+          "approximate": false,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:orbbec:2025-03-31",
+      "company": "orbbec",
+      "ticker": "688322.SH",
+      "name": "奥比中光",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-03-31",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "1.9106亿",
+          "value": 191060000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "2431.5015万",
+          "value": 24315015,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "142.8459万",
+          "value": 1428459,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:orbbec:2025-06-30",
+      "company": "orbbec",
+      "ticker": "688322.SH",
+      "name": "奥比中光",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "4.3547亿",
+          "value": 435470000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "6019.0103万",
+          "value": 60190103,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "8436.1153万",
+          "value": 84361153,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:orbbec:2025-09-30",
+      "company": "orbbec",
+      "ticker": "688322.SH",
+      "name": "奥比中光",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-09-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "7.14亿",
+          "value": 714000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "1.0802亿",
+          "value": 108020000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "1.1769亿",
+          "value": 117690000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:orbbec:2025-12-31",
+      "company": "orbbec",
+      "ticker": "688322.SH",
+      "name": "奥比中光",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "9.4074亿",
+          "value": 940740000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "1.2791亿",
+          "value": 127910000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "8272.407万",
+          "value": 82724070,
+          "quantum": 10,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:sanhua:2024-12-31",
+      "company": "sanhua",
+      "ticker": "002050.SZ",
+      "name": "三花智控",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "279.4716亿",
+          "value": 27947160000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "30.9917亿",
+          "value": 3099170000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "43.6663亿",
+          "value": 4366630000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:sanhua:2025-03-31",
+      "company": "sanhua",
+      "ticker": "002050.SZ",
+      "name": "三花智控",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-03-31",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "76.6945亿",
+          "value": 7669450000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "9.0342亿",
+          "value": 903420000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "4.6756亿",
+          "value": 467560000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:sanhua:2025-06-30",
+      "company": "sanhua",
+      "ticker": "002050.SZ",
+      "name": "三花智控",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "162.6279亿",
+          "value": 16262790000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "21.0994亿",
+          "value": 2109940000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "12.7541亿",
+          "value": 1275410000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:sanhua:2025-09-30",
+      "company": "sanhua",
+      "ticker": "002050.SZ",
+      "name": "三花智控",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-09-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "240.2931亿",
+          "value": 24029310000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "32.4236亿",
+          "value": 3242360000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "30.5828亿",
+          "value": 3058280000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:sanhua:2025-12-31",
+      "company": "sanhua",
+      "ticker": "002050.SZ",
+      "name": "三花智控",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "310.1174亿",
+          "value": 31011740000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "40.6289亿",
+          "value": 4062890000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "50.9076亿",
+          "value": 5090760000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:shuanghuan:2024-12-31",
+      "company": "shuanghuan",
+      "ticker": "002472.SZ",
+      "name": "双环传动",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "87.814亿",
+          "value": 8781400000,
+          "quantum": 100000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "10.2391亿",
+          "value": 1023910000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "16.8124亿",
+          "value": 1681240000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:shuanghuan:2025-03-31",
+      "company": "shuanghuan",
+      "ticker": "002472.SZ",
+      "name": "双环传动",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-03-31",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "20.6475亿",
+          "value": 2064750000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "2.7601亿",
+          "value": 276010000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "2.0964亿",
+          "value": 209640000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:shuanghuan:2025-06-30",
+      "company": "shuanghuan",
+      "ticker": "002472.SZ",
+      "name": "双环传动",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "42.291亿",
+          "value": 4229100000,
+          "quantum": 100000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "5.7715亿",
+          "value": 577150000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "9.804亿",
+          "value": 980400000,
+          "quantum": 100000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:shuanghuan:2025-09-30",
+      "company": "shuanghuan",
+      "ticker": "002472.SZ",
+      "name": "双环传动",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-09-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "64.6637亿",
+          "value": 6466370000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "8.9839亿",
+          "value": 898390000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "12.9789亿",
+          "value": 1297890000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:shuanghuan:2025-12-31",
+      "company": "shuanghuan",
+      "ticker": "002472.SZ",
+      "name": "双环传动",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "91.1217亿",
+          "value": 9112170000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "12.6152亿",
+          "value": 1261520000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "23.9131亿",
+          "value": 2391310000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "us_annual:tsla:2024-12-31",
+      "company": "tsla",
+      "ticker": "TSLA.O",
+      "name": "特斯拉",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "frequency": "annual",
+      "currency": "USD",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "us_annual",
+      "values": {
+        "revenue": {
+          "raw": "976.9亿",
+          "value": 97690000000,
+          "quantum": 10000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "总营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "70.91亿",
+          "value": 7091000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司股东的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "149.23亿",
+          "value": 14923000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "us_annual:tsla:2025-03-31",
+      "company": "tsla",
+      "ticker": "TSLA.O",
+      "name": "特斯拉",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-03-31",
+      "frequency": "year-to-date",
+      "currency": "USD",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "us_annual",
+      "values": {
+        "revenue": {
+          "raw": "193.35亿",
+          "value": 19335000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "总营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "4.09亿",
+          "value": 409000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司股东的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "21.56亿",
+          "value": 2156000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "us_annual:tsla:2025-06-30",
+      "company": "tsla",
+      "ticker": "TSLA.O",
+      "name": "特斯拉",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "frequency": "year-to-date",
+      "currency": "USD",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "us_annual",
+      "values": {
+        "revenue": {
+          "raw": "418.31亿",
+          "value": 41831000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "总营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "15.81亿",
+          "value": 1581000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司股东的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "46.96亿",
+          "value": 4696000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "us_annual:tsla:2025-09-30",
+      "company": "tsla",
+      "ticker": "TSLA.O",
+      "name": "特斯拉",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-09-30",
+      "frequency": "year-to-date",
+      "currency": "USD",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "us_annual",
+      "values": {
+        "revenue": {
+          "raw": "699.26亿",
+          "value": 69926000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "总营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "29.54亿",
+          "value": 2954000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司股东的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "109.34亿",
+          "value": 10934000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "us_annual:tsla:2025-12-31",
+      "company": "tsla",
+      "ticker": "TSLA.O",
+      "name": "特斯拉",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "frequency": "annual",
+      "currency": "USD",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "us_annual",
+      "values": {
+        "revenue": {
+          "raw": "948.27亿",
+          "value": 94827000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "总营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "37.94亿",
+          "value": 3794000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司股东的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "147.47亿",
+          "value": 14747000000,
+          "quantum": 1000000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:tuopu:2024-12-31",
+      "company": "tuopu",
+      "ticker": "601689.SH",
+      "name": "拓普集团",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "266.0033亿",
+          "value": 26600330000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "30.0061亿",
+          "value": 3000610000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "32.3607亿",
+          "value": 3236070000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:tuopu:2025-03-31",
+      "company": "tuopu",
+      "ticker": "601689.SH",
+      "name": "拓普集团",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-03-31",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "57.6759亿",
+          "value": 5767590000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "5.6547亿",
+          "value": 565470000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "8.8775亿",
+          "value": 887750000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:tuopu:2025-06-30",
+      "company": "tuopu",
+      "ticker": "601689.SH",
+      "name": "拓普集团",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "129.3463亿",
+          "value": 12934630000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "12.9493亿",
+          "value": 1294930000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "24.5627亿",
+          "value": 2456270000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:tuopu:2025-09-30",
+      "company": "tuopu",
+      "ticker": "601689.SH",
+      "name": "拓普集团",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-09-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "209.2819亿",
+          "value": 20928190000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "19.6654亿",
+          "value": 1966540000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "29.7101亿",
+          "value": 2971010000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual:tuopu:2025-12-31",
+      "company": "tuopu",
+      "ticker": "601689.SH",
+      "name": "拓普集团",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual",
+      "values": {
+        "revenue": {
+          "raw": "295.8146亿",
+          "value": 29581460000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "27.7907亿",
+          "value": 2779070000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "44.8209亿",
+          "value": 4482090000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "hk_annual:ubtech:2024-12-31",
+      "company": "ubtech",
+      "ticker": "9880.HK",
+      "name": "优必选",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "hk_annual",
+      "values": {
+        "revenue": {
+          "raw": "12.9547亿",
+          "value": 1295470000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "-1123590000.0",
+          "value": -1123590000,
+          "quantum": 0.1,
+          "approximate": false,
+          "missingReason": null,
+          "header": "归属于母公司股东的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "-883636000.0",
+          "value": -883636000,
+          "quantum": 0.1,
+          "approximate": false,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "hk_annual:ubtech:2025-06-30",
+      "company": "ubtech",
+      "ticker": "9880.HK",
+      "name": "优必选",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "hk_annual",
+      "values": {
+        "revenue": {
+          "raw": "6.1796亿",
+          "value": 617960000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "-413648000.0",
+          "value": -413648000,
+          "quantum": 0.1,
+          "approximate": false,
+          "missingReason": null,
+          "header": "归属于母公司股东的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "-370814000.0",
+          "value": -370814000,
+          "quantum": 0.1,
+          "approximate": false,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "hk_annual:ubtech:2025-12-31",
+      "company": "ubtech",
+      "ticker": "9880.HK",
+      "name": "优必选",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "hk_annual",
+      "values": {
+        "revenue": {
+          "raw": "19.8139亿",
+          "value": 1981390000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "-703191000.0",
+          "value": -703191000,
+          "quantum": 0.1,
+          "approximate": false,
+          "missingReason": null,
+          "header": "归属于母公司股东的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "-784111000.0",
+          "value": -784111000,
+          "quantum": 0.1,
+          "approximate": false,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:zhongda:2024-12-31",
+      "company": "zhongda",
+      "ticker": "002896.SZ",
+      "name": "中大力德",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "9.7634亿",
+          "value": 976340000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "7255.0353万",
+          "value": 72550353,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "2.0896亿",
+          "value": 208960000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:zhongda:2025-03-31",
+      "company": "zhongda",
+      "ticker": "002896.SZ",
+      "name": "中大力德",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-03-31",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "2.3051亿",
+          "value": 230510000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "1739.8218万",
+          "value": 17398218,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "287316.48",
+          "value": 287316.48,
+          "quantum": 0.01,
+          "approximate": false,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:zhongda:2025-06-30",
+      "company": "zhongda",
+      "ticker": "002896.SZ",
+      "name": "中大力德",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "5.1602亿",
+          "value": 516020000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "4637.1523万",
+          "value": 46371523,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "896.5969万",
+          "value": 8965969,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:zhongda:2025-09-30",
+      "company": "zhongda",
+      "ticker": "002896.SZ",
+      "name": "中大力德",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-09-30",
+      "frequency": "year-to-date",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "7.6481亿",
+          "value": 764810000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "5720.907万",
+          "value": 57209070,
+          "quantum": 10,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "3478.2084万",
+          "value": 34782084,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    },
+    {
+      "id": "annual_more:zhongda:2025-12-31",
+      "company": "zhongda",
+      "ticker": "002896.SZ",
+      "name": "中大力德",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "frequency": "annual",
+      "currency": "CNY",
+      "unit": "元",
+      "scope": "集团合并",
+      "provider": "iFinD MCP",
+      "requestId": "annual_more",
+      "values": {
+        "revenue": {
+          "raw": "10.4089亿",
+          "value": 1040890000,
+          "quantum": 10000,
+          "approximate": true,
+          "missingReason": null,
+          "header": "营业收入（单位：元）"
+        },
+        "profit": {
+          "raw": "6270.5997万",
+          "value": 62705997,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "归属于母公司所有者的净利润（单位：元）"
+        },
+        "cash": {
+          "raw": "3072.2943万",
+          "value": 30722943,
+          "quantum": 1,
+          "approximate": true,
+          "missingReason": null,
+          "header": "经营活动产生的现金流量净额（单位：元）"
+        }
+      },
+      "reviewStatus": "接口观察值 · 未作逐项原文复核"
+    }
+  ],
+  "notices": [
+    {
+      "id": "notice_tuopu:0",
+      "company": "tuopu",
+      "title": "拓普集团：拓普集团2025年年度报告",
+      "date": "2026-03-24",
+      "snippet": "以下是根据您所提供的背景知识撰写的拓普集团2025年的公司公告摘要：\n\n 宁波拓普集团股份有限公司2025年年度报告摘要\n\n 关键要点总结：\n1. 财务表现  \n    实现营业收入295.81亿元，同比增长11.21%。\n    归属于上市公司股东的净利润为27.79亿元，同比下降7.38%。\n    利润总额为31.52亿元，同比下降7.88%。\n\n2. 利润分配预案\n    提议以每10股派发现金股利4.90元（含税），总计派发现金股利8.52亿元，约占年度归属净利润的30.64%。\n    截至2025年底，母公司累积可供分配利润为54.29亿元。\n\n3. 主营业务分析\n    主营业务集中在汽车零部件领域，涉及八个产品线，包括NVH减震系统、内饰功能件、底盘系统、汽车电子、热管理系统、空气悬架系统、智能驾驶系统及机器人执行器。\n    国内市场占比65.79%，海外市场占比34.21%。\n   \n4. 技术创新与发展\n    加大研发投入，全年研发投入14.96亿元，占营收比例5.06%。\n    推出了空气悬挂、液压主动悬架等多项先进技术，为空气悬架、智能座舱等功能组件提供...",
+      "requestId": "notice_tuopu",
+      "kind": "接口摘要",
+      "reviewStatus": "待核对公告原文",
+      "sourceUrl": null
+    },
+    {
+      "id": "notice_tuopu:1",
+      "company": "tuopu",
+      "title": "拓普集团：拓普集团2025年年度报告",
+      "date": "2026-03-24",
+      "snippet": "| 机器人执行器 | 制造费用 | 2,173,426.39 | 0.01 | 1,430,513.76 | 0.01 | 51.93 | |。(5).报告期主要子公司股权变动导致合并范围变化。 (6).公司报告期内业务、产品或服务发生重大变化或调整有关情况。(7).主要销售客户及主要供应商情况。A.公司主要销售客户及主要供应商情况。 前五名客户销售额1,946,150.17万元，占年度销售总额65.79%；其中前五名客户销售额中关联方销售额0万元，占年度销售总额0%。 前五名供应商采购额379,061.95万元，占年度采购总额20.48%；其中前五名供应商采购额中关联方采购额0万元，占年度采购总额0%。 B.报告期内向单个客户的销售比例超过总额的50%、前5名客户中存在新增客户的或严重依赖于少数客户的情形。报告期内向单个供应商的采购比例超过总额的50%、前5名供应商中存在新增供应商的或严重依赖于少数供应商的情形。 C.报告期内公司股票被实施退市风险警示或其他风险警示。前五名销售客户。前五名供应商。D.报告期内公司存在贸易业务收入。贸易业务占营业收入比例超过10%前五名销售客户。贸易业...",
+      "requestId": "notice_tuopu",
+      "kind": "检索片段",
+      "reviewStatus": "待核对公告原文",
+      "sourceUrl": null
+    },
+    {
+      "id": "notices:0",
+      "company": "green",
+      "title": "绿的谐波：2025年年度报告(更正后)",
+      "date": "2026-07-10",
+      "snippet": "苏州绿的谐波传动科技股份有限公司2025年度报告摘要\n\n 一、公司概况\n 公司名称：苏州绿的谐波传动科技股份有限公司（简称“绿的谐波”）\n 股票代码：688017\n 注册地址：苏州市吴中区木渎镇尧峰西路68号\n 法定代表人：左昱昱\n 主要业务：精密传动装置研发、设计、生产和销售，涵盖谐波减速器、行星滚柱丝杠及精密零部件、机电一体化产品、智能自动化装备等。\n\n 二、经营业绩\n 营业收入：2025年实现营业收入570,714,025.26元，同比增长47.31%。\n 净利润：归属于上市公司股东的净利润为124,366,913.57元，同比增长121.42%。\n 经营活动产生的现金流量净额：152,003,651.27元，同比增长443.23%，主要得益于营业收入增加和销售回款的增加。\n 研发投入：2025年研发投入占营业收入的比例为9.45%，同比减少3.35个百分点，但仍保持较高的研发投入水平。\n\n 三、产品与技术\n 核心产品：公司产品广泛应用于智能机器人、数控机床、医疗器械、新能源装备等领域，尤其在谐波减速器领域取得了显著成就，打破了国际品牌的垄断。\n 技术创新：公司自主研发了多项核心...",
+      "requestId": "notices",
+      "kind": "接口摘要",
+      "reviewStatus": "待核对公告原文",
+      "sourceUrl": null
+    },
+    {
+      "id": "notices:1",
+      "company": "green",
+      "title": "绿的谐波：关于2025年年度报告的更正公告",
+      "date": "2026-07-10",
+      "snippet": "\\n\\n以下是公告更正的主要内容：\\n\\n1. 主要供应商采购额占比\\n\\n更正前显示公司前五名供应商采购额占年度采购总额的比例为17.78%，更正后该比例调整为34.58%。这一更正意味着公司对前五名供应商的依赖度显著增加。具体来看，第一大供应商的采购额从3,544.02万元上升到7,084.02万元，占比从8.79%提升至17.10%；第二大供应商的采购额从1,180.45万元下降到630.08万元，占比从2.93%下降至3.04%。此外，其他供应商的采购额和占比也发生了相应变化。\\n\\n2. 应收票据终止确认金额\\n\\n更正前，公司已背书或贴现且在资产负债表日尚未到期的银行承兑汇票终止确认金额为114,202,911.91元，更正后该金额减少至70,932,462.73元，减少了约42.57%。这表明公司在应收票据管理上的调整，可能反映了公司对于票据风险的重新评估或资金流动性管理的变化。\\n\\n3. 关联交易金额\\n\\n在与江苏镌极智能科技有限公司的关联交易中，采购商品的本期发生额由25,615,412.56元更正为26,079,845.41元，销售商品的本期发生额由11,243...",
+      "requestId": "notices",
+      "kind": "检索片段",
+      "reviewStatus": "待核对公告原文",
+      "sourceUrl": null
+    },
+    {
+      "id": "notices:2",
+      "company": "green",
+      "title": "绿的谐波：2025年年度报告(更正后)",
+      "date": "2026-07-10",
+      "snippet": "作为国内谐波减速器行业的龙头企业，公司较早完成了工业机器人谐波减速器的技术研发并实现大规模产业化，率先打破国外垄断，显著降低了国内机器人行业的供应链成本和交付周期。 近年来，公司在具身智能机器人核心关节部件领域取得重要突破，自主研发的高扭矩密度谐波减速器和一体化关节模组，已在国内具身智能机器人产业链占据领先地位，成为多家头部具身智能机器人企业的核心供应商。 同时，公司的精密传动解决方案已广泛应用于服务机器人、医疗机器人等高精度场景，进一步巩固了在机器人核心零部件行业的技术优势。 此外，公司以高精度数控转台为代表的一系列机电一体化产品也获得了市场广泛认可，为高端装备制造领域提供了关键技术支持，并成为公司新的业务增长点。 未来，公司将继续深化在机器人核心部件领域的创新，推动国产精密传动技术在全球市场的竞争力。3、报告期内新技术、新产业、新业态、新模式的发展情况和未来发展趋势。 公司提出了具有力矩、温度、振动多维状态感知的智能谐波减速器设计方法，将MEMS薄膜应变与温度传感器原位集成设计于谐波减速器上，实现对减速器整体状态的实时感知与反馈，形成智能化谐波减速器的设计-制造-测试迭代优化设计方...",
+      "requestId": "notices",
+      "kind": "检索片段",
+      "reviewStatus": "待核对公告原文",
+      "sourceUrl": null
+    },
+    {
+      "id": "notices:3",
+      "company": "green",
+      "title": "绿的谐波：2025年年度报告",
+      "date": "2026-04-23",
+      "snippet": "以下是基于提供的材料生成的公告摘要：\n\n 苏州绿的谐波传动科技股份有限公司2025年度总结报告\n\n 一、公司基本信息\n苏州绿的谐波传动科技股份有限公司是一家专注于谐波减速器及金属部件、机电一体化产品等领域研发生产的高科技企业。\n\n 二、财务表现概览\n1. 营收增长  \n    合并口径下，全年实现营业收入570,714,025.26元，同比增长约47%，显示出较强的市场需求拉动效应。\n   \n2. 盈利能力\n    净利润大幅攀升至125,858,970.15元，同比增幅明显，体现了较高的利润率优势。\n    归属母公司股东的净利润为124,366,913.57元，显示主业稳步增长。\n    综合收益总额达到了126,047,440.20元，比去年同期提升了近两倍，反映出较好的经营效率。\n\n3. 现金流状况\n    报告期内经营活动产生的现金流量净额为152,003,651.27元，相比去年有了较大改善，表明企业在维持正常运转的基础上实现了良性循环。\n\n 三、资本结构调整\n1. 股本扩张  \n    截至年底，公司新增股本14,566,257.00股，使得总股本增至183,330,12...",
+      "requestId": "notices",
+      "kind": "接口摘要",
+      "reviewStatus": "待核对公告原文",
+      "sourceUrl": null
+    },
+    {
+      "id": "notices:4",
+      "company": "green",
+      "title": "绿的谐波：2025年年度报告",
+      "date": "2026-04-23",
+      "snippet": "营业收入变动原因说明：主要系工业机器人行业整体回暖，具身智能机器人行业快速增长，谐波减速器及机电一体化执行器销售增长所致。 营业成本变动原因说明：主要系营业收入增长，营业成本相应增加所致。财务费用变动原因说明：主要系货币资金利息收入减少所致。经营活动产生的现金流量净额变动原因说明：主要系报告期内营业收入增加，销售回款相应增加所致。 本期公司业务类型、利润构成或利润来源发生重大变动的详细说明。2、收入和成本分析。报告期内，公司实现营业收入57,071.40万元，营业成本36,009.11万元。(1).主营业务分行业、分产品、分地区、分销售模式情况。 | 主营业务分产品情况 | | | | | | |。| 分产品 | 营业收入 | 营业成本 | 毛利率（%） | 营业收入比上年增减（%） | 营业成本比上年增减（%） | 毛利率比上年增减（%） |。 | 主营业务分地区情况 | | | | | | |。| 分地区 | 营业收入 | 营业成本 | 毛利率（%） | 营业收入比上年增减（%） | 营业成本比上年增减（%） | 毛利率比上年增减（%） |。 | 出口 | 58,251,238.6...",
+      "requestId": "notices",
+      "kind": "检索片段",
+      "reviewStatus": "待核对公告原文",
+      "sourceUrl": null
+    }
+  ],
+  "requests": [
+    {
+      "id": "annual",
+      "tool": "get_security_indicators",
+      "request": {
+        "market": "A股",
+        "query": "查询绿的谐波(688017.SH)、三花智控(002050.SZ)、拓普集团(601689.SH)、双环传动(002472.SZ)、鸣志电器(603728.SH)的2024年和2025年年度合并报表：营业收入、归属于母公司股东的净利润、经营活动产生的现金流量净额。报告期分别为2024-01-01至2024-12-31和2025-01-01至2025-12-31。保留证券代码、报告期、指标名称、金额单位和币种；优先返回人民币元原值，不返回TTM或业绩预测；未披露或无法获得请明确空值及原因。"
+      },
+      "capturedAt": "2026-10-28T09:56:50Z",
+      "sha256": "da8fc938b26fe05a5a0234c0da10df32ec6e5bdcf249515e6a426d45d699cdfd",
+      "file": "ifind/raw/da8fc938b26fe05a5a0234c0da10df32ec6e5bdcf249515e6a426d45d699cdfd.json",
+      "status": "已收录",
+      "warnings": []
+    },
+    {
+      "id": "annual_more",
+      "tool": "get_security_indicators",
+      "request": {
+        "market": "A股",
+        "query": "中大力德002896.SZ、奥比中光688322.SH、汇川技术300124.SZ，2024年12月31日与2025年12月31日年度合并报表的营业收入、归属于母公司所有者的净利润、经营活动产生的现金流量净额。请只返回上述两个完整年度，不要TTM或预测。保留原始单位和证券代码、期间；未披露为缺值。"
+      },
+      "capturedAt": "2026-10-28T09:56:50Z",
+      "sha256": "8ee3292dd7bfea7165fb0b7ef6753e575aba976f2ae7032350ba64ac8dd548ec",
+      "file": "ifind/raw/8ee3292dd7bfea7165fb0b7ef6753e575aba976f2ae7032350ba64ac8dd548ec.json",
+      "status": "已收录",
+      "warnings": []
+    },
+    {
+      "id": "hk_annual",
+      "tool": "get_security_indicators",
+      "request": {
+        "market": "港股",
+        "query": "优必选09880.HK的2024年及2025年年度合并营业收入、归属母公司股东净利润、经营活动现金流净额，标明财务报告期结束日期、报表原币种、单位。不要将港股交易货币视为报表币种。不得用人形业务收入代替集团合并收入。"
+      },
+      "capturedAt": "2026-10-28T09:56:50Z",
+      "sha256": "ec17b239817b9d090229cf1c59781e80a281b7a6d628ca1f5a1d9bdd5bed429f",
+      "file": "ifind/raw/ec17b239817b9d090229cf1c59781e80a281b7a6d628ca1f5a1d9bdd5bed429f.json",
+      "status": "已收录",
+      "warnings": []
+    },
+    {
+      "id": "industry_monthly",
+      "tool": "fetch_edb",
+      "request": {
+        "query": "查询中国 工业机器人:产量:当月同比，指标S005566712，国家统计局，月度，单位%，时间范围2025-01-01至2026-09-30。返回各月原值和缺值及来源、指标ID；不要用服务机器人或2月累计填充序列替代。该指标仅作工业机器人行业背景，不代表人形机器人出货。"
+      },
+      "capturedAt": "2026-10-28T09:56:50Z",
+      "sha256": "8160bf814b07ffc7cd83f7e26a0fc1b0084ffe7985d4bb9446129ac9b7fa6b6e",
+      "file": "ifind/raw/8160bf814b07ffc7cd83f7e26a0fc1b0084ffe7985d4bb9446129ac9b7fa6b6e.json",
+      "status": "已隔离",
+      "warnings": [
+        "请求国家统计局 S005566712；返回产业在线且元数据截至2026-08，表格包含2026-09，来源与期间不一致"
+      ]
+    },
+    {
+      "id": "industry_search",
+      "tool": "search_edb",
+      "request": {
+        "query": "人形机器人产业研究的可用中国行业时间序列：优先人形机器人出货量、订单、产量；若无独立人形统计，请列出工业机器人产量（月度当月值）、制造业机器人需求等相关背景指标，并明确统计范围、单位、频率和数据发布机构，区分人形机器人与工业机器人。"
+      },
+      "capturedAt": "2026-10-28T09:56:50Z",
+      "sha256": "eac35d1a5840f1886c9e4e95ea3ef9b8760bbadb255a03cc4665d3507b866b25",
+      "file": "ifind/raw/eac35d1a5840f1886c9e4e95ea3ef9b8760bbadb255a03cc4665d3507b866b25.json",
+      "status": "已收录",
+      "warnings": []
+    },
+    {
+      "id": "notice_tuopu",
+      "tool": "search_notice",
+      "request": {
+        "query": "拓普集团 2025年年度报告 机器人执行器 营业收入 具体金额和产品业务拆分；保留公告标题、日期、检索片段与原文链接（若可用），不要将汽车电子或底盘收入当机器人收入",
+        "time_start": "2026-01-01",
+        "time_end": "2026-10-28",
+        "size": 2
+      },
+      "capturedAt": "2026-10-28T09:56:50Z",
+      "sha256": "474beaf982caa4bcc5c04d5f81021ead6d9eb8cd5ca0705473e3fe144da0d255",
+      "file": "ifind/raw/474beaf982caa4bcc5c04d5f81021ead6d9eb8cd5ca0705473e3fe144da0d255.json",
+      "status": "已收录",
+      "warnings": [
+        "接口未返回原文链接；摘要不作为原文引句或确认业务的依据"
+      ]
+    },
+    {
+      "id": "notices",
+      "tool": "search_notice",
+      "request": {
+        "query": "绿的谐波、三花智控、拓普集团、双环传动的人形机器人相关业务，重点检索2025年年度报告中机电执行器、谐波减速器及金属件、机器人收入、订单交付和客户身份的原文及披露范围，返回公告标题、公告日期、原文段落和来源链接",
+        "time_start": "2026-01-01",
+        "time_end": "2026-10-28",
+        "size": 5
+      },
+      "capturedAt": "2026-10-28T09:56:50Z",
+      "sha256": "4930d0085cdd40677e2bb87822685a6e91eb8b98bd7585aa8d050486df12eef1",
+      "file": "ifind/raw/4930d0085cdd40677e2bb87822685a6e91eb8b98bd7585aa8d050486df12eef1.json",
+      "status": "已收录",
+      "warnings": [
+        "接口未返回原文链接；摘要不作为原文引句或确认业务的依据"
+      ]
+    },
+    {
+      "id": "quarterly",
+      "tool": "get_security_indicators",
+      "request": {
+        "market": "A股",
+        "query": "查询绿的谐波688017.SH、拓普集团601689.SH、双环传动002472.SZ在2024年第一季度至2025年第四季度各单季度的合并营业收入和归属于母公司股东的净利润。明确需要单季度、非年初至期末累计、非TTM；若只有累计值，请保留累计字段并明确，不能直接称为单季度。按证券代码、报告期起止、指标、人民币元原值返回，保留取数口径和缺值。"
+      },
+      "capturedAt": "2026-10-28T09:56:50Z",
+      "sha256": "3def645d22a687055658a20dd3ba46c385a299e2d2f16a3f716d4ba3816694d7",
+      "file": "ifind/raw/3def645d22a687055658a20dd3ba46c385a299e2d2f16a3f716d4ba3816694d7.json",
+      "status": "仅保留原始返回",
+      "warnings": [
+        "单季度参数统一标为第一季度，与多季度行不一致；图表改由累计字段计算，不采用这批单季字段"
+      ]
+    },
+    {
+      "id": "us_annual",
+      "tool": "get_security_indicators",
+      "request": {
+        "market": "美股",
+        "query": "Tesla特斯拉TSLA.O的2024年和2025年年度合并营业收入、归属于母公司股东净利润、经营活动现金流净额，标明报告期结束日期，金额以财报美元计价。只要年度已实现数据，不要TTM、预期或Optimus业务推算。"
+      },
+      "capturedAt": "2026-10-28T09:56:50Z",
+      "sha256": "2a3067ebcb44d64965d7fca35558ee4b69d6a94f82132268771fd151ca3882d0",
+      "file": "ifind/raw/2a3067ebcb44d64965d7fca35558ee4b69d6a94f82132268771fd151ca3882d0.json",
+      "status": "已收录",
+      "warnings": []
+    }
+  ],
+  "quarantine": [
+    {
+      "requestId": "industry_monthly",
+      "reason": "请求国家统计局 S005566712；返回产业在线且元数据截至2026-08，表格包含2026-09，来源与期间不一致",
+      "action": "不进入财务图表或证据评级"
+    }
+  ]
+}
