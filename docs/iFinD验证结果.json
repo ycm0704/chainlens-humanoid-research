@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-28",
+  "version": "humanoid-15",
+  "dataMode": "iFinD MCP实际取数，本地快照；网页非直连",
+  "financialCompanies": 10,
+  "annualObservations": 20,
+  "noticeSnippets": 7,
+  "quarantinedRequests": 1,
+  "unitTests": {
+    "passed": 63,
+    "newProviderTests": 14
+  },
+  "browserAssertions": {
+    "passed": 24,
+    "runtimeErrors": 0,
+    "desktopViewport": [
+      1440,
+      1100
+    ],
+    "narrowViewport": [
+      390,
+      844
+    ]
+  },
+  "injectedFaults": [
+    "HTTP503",
+    "invalid JSON structure",
+    "AbortError",
+    "malformed financial candidate"
+  ],
+  "relationshipBaseSHA256": "6522ea8704ab5e25dcb79002775258ab10be9c2c93e303db5fc7f7039f2a993d",
+  "currentProviderSnapshotSHA256": "b4944a58553181a5068b152ae9ab7a021480800a824eb78428cc826b9c6ba31d",
+  "deploymentPackagesUpdated": false
+}

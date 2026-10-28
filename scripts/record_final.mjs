@@ -1,0 +1,27 @@
+import {createRequire} from 'node:module';import fs from 'node:fs/promises';import {fileURLToPath} from 'node:url';
+const require=createRequire(process.env.CHAINLENS_RUNTIME_PACKAGE),{chromium}=require('playwright');
+const root=fileURLToPath(new URL('..',import.meta.url)),dir=root+'/artifacts/live-recording';await fs.mkdir(dir,{recursive:true});
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}),page=await browser.newPage({viewport:{width:1440,height:900},deviceScaleFactor:1});page.setDefaultTimeout(8000);
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:8765/?v=humanoid-20',{waitUntil:'networkidle'});
+await page.evaluate(()=>{const s=document.createElement('style');s.textContent='html{scroll-behavior:smooth}#demo-caption{position:fixed;bottom:0;left:0;right:0;z-index:20000;padding:14px 25px;background:rgba(255,255,255,.97);border-top:1px solid #ddd;font:13px -apple-system;color:#555}#demo-cursor{position:fixed;pointer-events:none;z-index:30000;width:12px;height:12px;border:2px solid #b85b47;border-radius:50%;transform:translate(-50%,-50%);background:#ffffffa0}';document.head.append(s);const d=document.createElement('div');d.id='demo-caption';document.body.append(d);const c=document.createElement('div');c.id='demo-cursor';document.body.append(c);document.addEventListener('mousemove',e=>{c.style.left=e.clientX+'px';c.style.top=e.clientY+'px'})});
+const cdp=await page.context().newCDPSession(page),frames=[];let start=Date.now(),pending=Promise.resolve();
+cdp.on('Page.screencastFrame',e=>{const i=frames.length;frames.push({file:String(i).padStart(5,'0')+'.jpg',time:(Date.now()-start)/1000});pending=pending.then(()=>fs.writeFile(dir+'/'+frames[i].file,Buffer.from(e.data,'base64')));cdp.send('Page.screencastFrameAck',{sessionId:e.sessionId}).catch(()=>{})});
+await cdp.send('Page.startScreencast',{format:'jpeg',quality:76,maxWidth:1440,maxHeight:900,everyNthFrame:1});
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+const caption=async text=>page.locator('#demo-caption').evaluate((e,t)=>e.textContent=t,text);
+const move=async loc=>{await loc.scrollIntoViewIfNeeded();const r=await loc.boundingBox();await page.mouse.move(r.x+r.width/2,r.y+r.height/2,{steps:24});await pause(350)};
+const click=async loc=>{await move(loc);await loc.click();await pause(900)};
+try{
+ await caption('01 经营趋势｜悬停读数，点击进入季度明细');await pause(2500);await move(page.locator('[data-trend-point="2025-Q2"]'));await pause(3000);
+ await click(page.locator('[data-trend-point="2025-Q2"]'));await pause(3500);
+ await caption('02 产业链证据地图｜每家公司与环节的真实证据分开看');await click(page.locator('[data-view="chain"]').first());await page.evaluate(()=>scrollTo({top:0,behavior:'smooth'}));await pause(3500);await move(page.locator('[data-viz-relation="green,reducer"]'));await pause(2000);await click(page.locator('[data-viz-relation="green,reducer"]'));await pause(3000);
+ await caption('03 公司收入变化｜iFinD原始取数与两期口径可追溯');await click(page.locator('[data-viz-metric="green"]'));await pause(3500);await click(page.locator('#modal .close'));
+ await caption('04 公司对比｜季度趋势、利润率与跨市场边界');await click(page.locator('.nav [data-view="compare"]'));await move(page.locator('[data-compare-quarter="2"]'));await pause(3000);await click(page.locator('[data-compare-metric="profit"]'));await pause(2500);await click(page.locator('[data-compare-preset="green,hds"]'));await pause(3000);
+ await caption('05 iFinD数据台｜已取数、功能绑定、原始查询和异常隔离');await click(page.locator('.nav [data-view="data"]'));await pause(4000);await page.locator('.tool-bars').scrollIntoViewIfNeeded();await pause(2500);await click(page.locator('.mcp-request summary').first());await pause(2500);
+ await caption('06 变化影响分析｜条件性测算，可调整销量、价格和暴露比例');await click(page.locator('.nav [data-view="scenario"]'));await page.locator('.impact-grid').scrollIntoViewIfNeeded();await pause(3000);await move(page.locator('[data-viz-sensitivity="20,5"]'));await pause(2000);await click(page.locator('[data-viz-sensitivity="20,5"]'));await page.locator('#calc-result').scrollIntoViewIfNeeded();await pause(3000);
+ await caption('07 AI证据查询｜当前使用证据检索与离线研究回放');await click(page.locator('.nav [data-view="ai"]'));await page.locator('#question').fill('拓普集团2025年营业收入是多少');await click(page.locator('#ask'));await page.locator('.ai-query-answer').scrollIntoViewIfNeeded();await pause(3500);
+ await caption('08 基金持仓穿透｜历史披露有期间，点击公司继续研究');await click(page.locator('.nav [data-view="funds"]'));await page.locator('.fund-visual').scrollIntoViewIfNeeded();await pause(4000);await move(page.locator('.fund-weight[data-company]').first());await pause(2500);
+ await caption('ChainLens｜人形机器人研究工作台 · 图表、证据、来源与研究操作联动');await click(page.locator('.nav [data-view="explore"]'));await page.locator('.operating-scatter').scrollIntoViewIfNeeded();await pause(4000);
+}catch(e){errors.push(e.message);await caption('ChainLens · 可追溯产业研究');await pause(1500)}
+const duration=(Date.now()-start)/1000;await cdp.send('Page.stopScreencast');await pending;await fs.writeFile(dir+'/frames.json',JSON.stringify({width:1440,height:900,duration,frames,errors}));await fs.writeFile(root+'/docs/最终浏览器与录制验证.json',JSON.stringify({duration,frameCount:frames.length,errors,checkedAt:new Date().toISOString()},null,2));console.log(JSON.stringify({duration,frames:frames.length,errors}));await browser.close();if(errors.length)process.exitCode=1;

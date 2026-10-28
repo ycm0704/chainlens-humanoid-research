@@ -1,0 +1,30 @@
+{
+  "recordId": "AI_REPLAY_UB25_20261028",
+  "mode": "development_time_codex_offline_replay",
+  "runtimeModelCalled": false,
+  "createdAt": "2026-10-28",
+  "source": {
+    "url": "https://owebsite-cdn.ubtrobot.com/resources/file/2025/04/28/670407684730949.pdf",
+    "documentDate": "2025-04-27",
+    "eventDate": "2025-04-24",
+    "locator": "第1页采购合同与预付款；第2页落款日期"
+  },
+  "prompt": "仅依据公告原文抽取公司、产品、证据类别、具体阶段、金额、客户身份、交付和收入确认。未披露则保留缺失；预付款不可写成收入；文件日期不可从URL路径推断。",
+  "output": {
+    "company": "优必选",
+    "product": "Walker S1 / Walker C",
+    "evidenceCategory": "订单",
+    "businessStage": "正式订单",
+    "amount": null,
+    "missingReason": "未披露",
+    "counterparty": "公告未列明采购方名称",
+    "delivery": "本公告未确认完成交付",
+    "revenue": "本公告未确认收入",
+    "quote": "received the advance payment"
+  },
+  "verification": {
+    "checks": ["公告第一段签约日期为2025-04-24", "落款为2025-04-27，未以URL中的2025/04/28代替文件日期", "预付款、交付与收入确认未混用", "金额和客户名称无依据时保持缺失", "当前未写入3家公司深度证据操作日志"],
+    "humanResearchReview": "待研究员复核",
+    "limits": "仅核对此公告，不断言公司在其他期间未交付或未确认收入。"
+  }
+}

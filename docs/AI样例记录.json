@@ -1,0 +1,965 @@
+{
+  "recordedAt": "2026-10-28T08:09:27.127Z",
+  "mode": "开发阶段Codex辅助分析的离线回放；无应用内模型请求",
+  "promptType": "规范化可复现提示词，不是原始API日志",
+  "prompt": "只使用输入材料，保留披露项目原名、起止期间、原句、金额与范围。分开类别/阶段/方向/审核/有效性；公司业务与人形应用分开。说明可比限制、传导条件和缺口，每项结论关联事实ID。新年度并存，同年度修订仅替代已声明字段。",
+  "samples": [
+    {
+      "id": "compare",
+      "input": [
+        {
+          "id": "C01",
+          "company": "green",
+          "node": "reducer",
+          "concept": "谐波减速器及金属部件",
+          "grade": "A",
+          "text": "FY2024 产品收入325,415,663.13元，占合并收入约84.00%（计算值）。",
+          "source": "GD24",
+          "locator": "PDF第214页「营业收入、营业成本的分解信息」；人民币元",
+          "boundary": "含金属部件，涵盖多种下游；不等同人形机器人减速器收入。",
+          "period": "FY2024",
+          "quote": "谐波减速器及金属部件 325,415,663.13",
+          "quoteNote": "表格及换行空白归一化；保留原义",
+          "relationId": "green-product-harmonic-metal",
+          "metricKey": "revenue",
+          "evidenceCategory": "收入",
+          "businessStage": "收入确认",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "disclosedName": "谐波减速器及金属部件",
+          "scope": "原披露产品组；无法拆分人形应用",
+          "amount": 325415663.13,
+          "currency": "CNY",
+          "unit": "元",
+          "missingReason": null,
+          "sourceVersion": "GD24-original",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        },
+        {
+          "id": "C03",
+          "company": "hds",
+          "node": "reducer",
+          "concept": "精密减速器",
+          "grade": "A",
+          "text": "截至2025年3月财年，减速器收入42,304百万日元，占合并收入76.0%。",
+          "source": "HD25",
+          "locator": "PDF第5页 Overview of Operating Results，speed reducers；金额为披露约数",
+          "boundary": "减速器业务组不限于人形应用；不可据此认定特定整机客户或人形市场份额。",
+          "period": "截至2025-03财年",
+          "quote": "speed reducers totaled ¥42,304 million",
+          "quoteNote": "短摘录；以原文上下文为准",
+          "relationId": "hds-product-reducer",
+          "metricKey": "revenue",
+          "evidenceCategory": "收入",
+          "businessStage": "收入确认",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "disclosedName": "speed reducers",
+          "scope": "原披露产品组；无法拆分人形应用",
+          "amount": 42304000000,
+          "currency": "JPY",
+          "unit": "日元",
+          "missingReason": null,
+          "sourceVersion": "HD25-results",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        },
+        {
+          "id": "C05",
+          "company": "hds",
+          "node": "rotary",
+          "concept": "机电一体化产品",
+          "grade": "A",
+          "text": "截至2025年3月财年，机电一体化产品收入13,341百万日元，占合并收入24.0%。",
+          "source": "HD25",
+          "locator": "PDF第5页，mechatronics products",
+          "boundary": "不是单一人形关节模组口径；磁性应用等产品也归入机电一体化。",
+          "period": "截至2025-03财年",
+          "quote": "mechatronics products totaled ¥13,341 million",
+          "quoteNote": "短摘录；以原文上下文为准",
+          "relationId": "hds-product-mechatronics",
+          "metricKey": "revenue",
+          "evidenceCategory": "收入",
+          "businessStage": "收入确认",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "disclosedName": "mechatronics products",
+          "scope": "原披露产品组；无法拆分人形应用",
+          "amount": 13341000000,
+          "currency": "JPY",
+          "unit": "日元",
+          "missingReason": null,
+          "sourceVersion": "HD25-results",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        }
+      ],
+      "draft": {
+        "id": "compare",
+        "title": "中日减速器公司为何可比？",
+        "short": "中日业务对比",
+        "summary": "减速器业务存在交集，应用与财年口径仍需拆开。",
+        "citations": [
+          "C01",
+          "C03",
+          "C05"
+        ],
+        "facts": [
+          "两家公司均披露减速器与机电一体化产品收入。"
+        ],
+        "inference": "可比较重合产品的技术与经营驱动；绿的口径含金属部件，HDS覆盖其他下游，且财年、币种、会计准则不同，不能据合并收入排序人形份额。",
+        "gaps": [
+          "相同型号与应用的收入、ASP及客户结构",
+          "同期间、同口径的毛利和产能数据"
+        ],
+        "watch": "跟踪可比产品、客户与财年差异；补齐数据后再量化横比。",
+        "route": "compare",
+        "assumptions": [
+          "产品功能交集支持定性参照；财务期间与产品范围未对齐前不做量化排名。"
+        ]
+      },
+      "validation": {
+        "referencesResolve": true,
+        "hasSeparateHypotheses": true,
+        "recordCanBeCreated": true
+      },
+      "semanticReview": "开发阶段已核对出处与边界；尚待实际研究员复核，不是AI准确率"
+    },
+    {
+      "id": "humanoid-revenue",
+      "input": [
+        {
+          "id": "C07",
+          "company": "tsla",
+          "node": "body",
+          "concept": "Optimus 人形机器人",
+          "grade": "C",
+          "text": "2025年10-K披露正在开发Optimus，并明确Bots尚未商业化。",
+          "source": "TS25",
+          "locator": "Item 1A风险，检索「We have yet to commercialize Bots」；Item 7 Overview",
+          "boundary": "研发证据，不以规划产能替代实际交付；集团收入不是Optimus收入。",
+          "period": "FY2025",
+          "quote": "We have yet to commercialize Bots",
+          "quoteNote": "短摘录；以原文上下文为准",
+          "relationId": "tesla-optimus",
+          "metricKey": "commercialization",
+          "evidenceCategory": "产品研发",
+          "businessStage": "研发",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "disclosedName": "Bots (including Optimus)",
+          "scope": "Optimus 人形机器人",
+          "amount": null,
+          "currency": null,
+          "unit": null,
+          "missingReason": "不适用",
+          "sourceVersion": "TS25-10K",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        },
+        {
+          "id": "C08",
+          "company": "hds",
+          "node": "embodied",
+          "concept": "AI 与人形机器人需求展望",
+          "grade": "D",
+          "text": "公司战略部分将AI与人形机器人列为预期增长的新市场。",
+          "source": "HD25",
+          "locator": "PDF第8页 Medium- to Long-term Issues，AI and humanoid robots",
+          "boundary": "需求预期不是已签订单或人形机器人独立收入。",
+          "period": "截至2025-03财年",
+          "quote": "a new market for “AI and humanoid robots”",
+          "quoteNote": "短摘录；以原文上下文为准",
+          "relationId": "hds-humanoid-outlook",
+          "metricKey": "outlook",
+          "evidenceCategory": "表态",
+          "businessStage": "需求展望",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "disclosedName": "AI and humanoid robots",
+          "scope": "AI 与人形机器人需求展望",
+          "amount": null,
+          "currency": null,
+          "unit": null,
+          "missingReason": "不适用",
+          "sourceVersion": "HD25-results",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        },
+        {
+          "id": "C09",
+          "company": "green",
+          "node": "body",
+          "concept": "人形机器人独立收入",
+          "grade": "E",
+          "text": "当前收录FY2024材料未提供人形机器人收入的独立拆分。",
+          "source": "GD24",
+          "locator": "核查范围：第10页经营回顾与第214页产品收入分解",
+          "boundary": "证据缺口不等于收入为零；不能将通用零部件收入全部贴上人形概念。",
+          "period": "FY2024",
+          "quote": "",
+          "quoteNote": "证据缺口是核查结果，无可支持肯定结论的原句",
+          "relationId": "green-humanoid-revenue",
+          "metricKey": "revenue_breakout",
+          "evidenceCategory": null,
+          "businessStage": "未知",
+          "supportDirection": "不能判断",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "disclosedName": null,
+          "scope": "人形机器人独立收入",
+          "amount": null,
+          "currency": null,
+          "unit": null,
+          "missingReason": "未披露",
+          "sourceVersion": "GD24-original",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": {
+            "sourceIds": [
+              "GD24"
+            ],
+            "range": "核查范围：第10页经营回顾与第214页产品收入分解",
+            "checkedAt": "2026-10-28",
+            "missing": [
+              "收入拆分"
+            ],
+            "exhaustive": false
+          }
+        }
+      ],
+      "draft": {
+        "id": "humanoid-revenue",
+        "title": "人形机器人概念是否已有真实收入？",
+        "short": "人形营收核查",
+        "summary": "已有零部件收入与整机研发，尚不能替代人形业务收入。",
+        "citations": [
+          "C07",
+          "C08",
+          "C09"
+        ],
+        "facts": [
+          "Tesla披露Bots尚未商业化；HDS有需求展望；绿的样本未单列人形收入。"
+        ],
+        "inference": "三类证据分别为研发、预期与缺口。不能将研发规划、市场展望或通用零部件收入写成人形机器人确定收入。",
+        "gaps": [
+          "人形业务独立订单、交付及收入确认",
+          "零部件公司与具体整机客户的可核验关系"
+        ],
+        "watch": "等待正式合同、实际交付及分项营收；证据未升级前保留原等级。",
+        "route": "chain",
+        "assumptions": [
+          "未来可核验的合同、交付及应用收入拆分能够支持重新判断；当前材料不充分。"
+        ]
+      },
+      "validation": {
+        "referencesResolve": true,
+        "hasSeparateHypotheses": true,
+        "recordCanBeCreated": true
+      },
+      "semanticReview": "开发阶段已核对出处与边界；尚待实际研究员复核，不是AI准确率"
+    },
+    {
+      "id": "growth",
+      "input": [
+        {
+          "id": "C01",
+          "company": "green",
+          "node": "reducer",
+          "concept": "谐波减速器及金属部件",
+          "grade": "A",
+          "text": "FY2024 产品收入325,415,663.13元，占合并收入约84.00%（计算值）。",
+          "source": "GD24",
+          "locator": "PDF第214页「营业收入、营业成本的分解信息」；人民币元",
+          "boundary": "含金属部件，涵盖多种下游；不等同人形机器人减速器收入。",
+          "period": "FY2024",
+          "quote": "谐波减速器及金属部件 325,415,663.13",
+          "quoteNote": "表格及换行空白归一化；保留原义",
+          "relationId": "green-product-harmonic-metal",
+          "metricKey": "revenue",
+          "evidenceCategory": "收入",
+          "businessStage": "收入确认",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "disclosedName": "谐波减速器及金属部件",
+          "scope": "原披露产品组；无法拆分人形应用",
+          "amount": 325415663.13,
+          "currency": "CNY",
+          "unit": "元",
+          "missingReason": null,
+          "sourceVersion": "GD24-original",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        },
+        {
+          "id": "C10",
+          "company": "green",
+          "node": "reducer",
+          "concept": "Tesla 供货关系",
+          "grade": "E",
+          "text": "当前收录材料不足以核实绿的谐波与Tesla的直接供货关系。",
+          "source": "GD24",
+          "locator": "核查范围：FY2024经营讨论与产品收入摘录；非全公告检索",
+          "boundary": "同处产业链不等于已形成采购关系；需要客户或合同披露补证。",
+          "period": "FY2024",
+          "quote": "",
+          "quoteNote": "证据缺口是核查结果，无可支持肯定结论的原句",
+          "relationId": "green-tesla-supply",
+          "metricKey": "customer_identity",
+          "evidenceCategory": null,
+          "businessStage": "未知",
+          "supportDirection": "不能判断",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "disclosedName": null,
+          "scope": "Tesla 供货关系",
+          "amount": null,
+          "currency": null,
+          "unit": null,
+          "missingReason": "未获取",
+          "sourceVersion": "GD24-original",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": {
+            "sourceIds": [
+              "GD24"
+            ],
+            "range": "核查范围：FY2024经营讨论与产品收入摘录；非全公告检索",
+            "checkedAt": "2026-10-28",
+            "missing": [
+              "客户身份与采购关系"
+            ],
+            "exhaustive": false
+          }
+        }
+      ],
+      "draft": {
+        "id": "growth",
+        "title": "“谐波减速器及金属件”收入增长，距离证明人形放量还缺什么？",
+        "short": "增长归因核查",
+        "summary": "产品组收入增长不等于人形机器人应用收入增长。",
+        "citations": [
+          "C01",
+          "C10"
+        ],
+        "facts": [
+          "绿的FY2024减速器及金属部件有收入，未核实Tesla直接供货。"
+        ],
+        "inference": "新增年度收入可验证产品组增长，但不能拆出工业、机床与人形应用的贡献，也不能反推特定客户定点。",
+        "gaps": [
+          "按应用拆分的收入及增量来源",
+          "人形客户、合同与实际交付"
+        ],
+        "watch": "回放FY2025更正后年报，新增年度产品组观察；未载入原版前不判定更正字段；继续追踪人形应用拆分。",
+        "route": "updates",
+        "assumptions": [
+          "两个年度产品组范围可比性仍待核查；名称差异不自行消除。",
+          "要归因为人形放量，需新增应用拆分或客户合同证据。"
+        ]
+      },
+      "validation": {
+        "referencesResolve": true,
+        "hasSeparateHypotheses": true,
+        "recordCanBeCreated": true
+      },
+      "semanticReview": "开发阶段已核对出处与边界；尚待实际研究员复核，不是AI准确率"
+    },
+    {
+      "id": "ramp",
+      "input": [
+        {
+          "id": "C01",
+          "company": "green",
+          "node": "reducer",
+          "concept": "谐波减速器及金属部件",
+          "grade": "A",
+          "text": "FY2024 产品收入325,415,663.13元，占合并收入约84.00%（计算值）。",
+          "source": "GD24",
+          "locator": "PDF第214页「营业收入、营业成本的分解信息」；人民币元",
+          "boundary": "含金属部件，涵盖多种下游；不等同人形机器人减速器收入。",
+          "period": "FY2024",
+          "quote": "谐波减速器及金属部件 325,415,663.13",
+          "quoteNote": "表格及换行空白归一化；保留原义",
+          "relationId": "green-product-harmonic-metal",
+          "metricKey": "revenue",
+          "evidenceCategory": "收入",
+          "businessStage": "收入确认",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "disclosedName": "谐波减速器及金属部件",
+          "scope": "原披露产品组；无法拆分人形应用",
+          "amount": 325415663.13,
+          "currency": "CNY",
+          "unit": "元",
+          "missingReason": null,
+          "sourceVersion": "GD24-original",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        },
+        {
+          "id": "C03",
+          "company": "hds",
+          "node": "reducer",
+          "concept": "精密减速器",
+          "grade": "A",
+          "text": "截至2025年3月财年，减速器收入42,304百万日元，占合并收入76.0%。",
+          "source": "HD25",
+          "locator": "PDF第5页 Overview of Operating Results，speed reducers；金额为披露约数",
+          "boundary": "减速器业务组不限于人形应用；不可据此认定特定整机客户或人形市场份额。",
+          "period": "截至2025-03财年",
+          "quote": "speed reducers totaled ¥42,304 million",
+          "quoteNote": "短摘录；以原文上下文为准",
+          "relationId": "hds-product-reducer",
+          "metricKey": "revenue",
+          "evidenceCategory": "收入",
+          "businessStage": "收入确认",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "disclosedName": "speed reducers",
+          "scope": "原披露产品组；无法拆分人形应用",
+          "amount": 42304000000,
+          "currency": "JPY",
+          "unit": "日元",
+          "missingReason": null,
+          "sourceVersion": "HD25-results",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        },
+        {
+          "id": "C07",
+          "company": "tsla",
+          "node": "body",
+          "concept": "Optimus 人形机器人",
+          "grade": "C",
+          "text": "2025年10-K披露正在开发Optimus，并明确Bots尚未商业化。",
+          "source": "TS25",
+          "locator": "Item 1A风险，检索「We have yet to commercialize Bots」；Item 7 Overview",
+          "boundary": "研发证据，不以规划产能替代实际交付；集团收入不是Optimus收入。",
+          "period": "FY2025",
+          "quote": "We have yet to commercialize Bots",
+          "quoteNote": "短摘录；以原文上下文为准",
+          "relationId": "tesla-optimus",
+          "metricKey": "commercialization",
+          "evidenceCategory": "产品研发",
+          "businessStage": "研发",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "disclosedName": "Bots (including Optimus)",
+          "scope": "Optimus 人形机器人",
+          "amount": null,
+          "currency": null,
+          "unit": null,
+          "missingReason": "不适用",
+          "sourceVersion": "TS25-10K",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        },
+        {
+          "id": "C10",
+          "company": "green",
+          "node": "reducer",
+          "concept": "Tesla 供货关系",
+          "grade": "E",
+          "text": "当前收录材料不足以核实绿的谐波与Tesla的直接供货关系。",
+          "source": "GD24",
+          "locator": "核查范围：FY2024经营讨论与产品收入摘录；非全公告检索",
+          "boundary": "同处产业链不等于已形成采购关系；需要客户或合同披露补证。",
+          "period": "FY2024",
+          "quote": "",
+          "quoteNote": "证据缺口是核查结果，无可支持肯定结论的原句",
+          "relationId": "green-tesla-supply",
+          "metricKey": "customer_identity",
+          "evidenceCategory": null,
+          "businessStage": "未知",
+          "supportDirection": "不能判断",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "disclosedName": null,
+          "scope": "Tesla 供货关系",
+          "amount": null,
+          "currency": null,
+          "unit": null,
+          "missingReason": "未获取",
+          "sourceVersion": "GD24-original",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": {
+            "sourceIds": [
+              "GD24"
+            ],
+            "range": "核查范围：FY2024经营讨论与产品收入摘录；非全公告检索",
+            "checkedAt": "2026-10-28",
+            "missing": [
+              "客户身份与采购关系"
+            ],
+            "exhaustive": false
+          }
+        }
+      ],
+      "draft": {
+        "id": "ramp",
+        "title": "海外量产预期如何传到零部件收入？",
+        "short": "量产兑现路径",
+        "summary": "整机交付、供应关系与收入确认是三道独立验证。",
+        "citations": [
+          "C01",
+          "C03",
+          "C07",
+          "C10"
+        ],
+        "facts": [
+          "样本公司有减速器业务；Tesla在研发Optimus。"
+        ],
+        "inference": "整机交付若增加，只有技术方案适用且已获定点的供应商才可能受益。当前不确认样本公司为Tesla供应商，不给出确定收入增量。",
+        "gaps": [
+          "实际整机交付，区别规划产能",
+          "定点关系、单机用量、采购份额和确认时点"
+        ],
+        "watch": "按定点、订单、交付、验收、回款顺序跟踪；技术路线变化时重审。",
+        "route": "scenario",
+        "assumptions": [
+          "海外实际交付增长，且采用相关技术方案。",
+          "样本供应商已获定点且能将交付转为确认收入；当前未证实。"
+        ]
+      },
+      "validation": {
+        "referencesResolve": true,
+        "hasSeparateHypotheses": true,
+        "recordCanBeCreated": true
+      },
+      "semanticReview": "开发阶段已核对出处与边界；尚待实际研究员复核，不是AI准确率"
+    },
+    {
+      "id": "cost",
+      "input": [
+        {
+          "id": "C01",
+          "company": "green",
+          "node": "reducer",
+          "concept": "谐波减速器及金属部件",
+          "grade": "A",
+          "text": "FY2024 产品收入325,415,663.13元，占合并收入约84.00%（计算值）。",
+          "source": "GD24",
+          "locator": "PDF第214页「营业收入、营业成本的分解信息」；人民币元",
+          "boundary": "含金属部件，涵盖多种下游；不等同人形机器人减速器收入。",
+          "period": "FY2024",
+          "quote": "谐波减速器及金属部件 325,415,663.13",
+          "quoteNote": "表格及换行空白归一化；保留原义",
+          "relationId": "green-product-harmonic-metal",
+          "metricKey": "revenue",
+          "evidenceCategory": "收入",
+          "businessStage": "收入确认",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "disclosedName": "谐波减速器及金属部件",
+          "scope": "原披露产品组；无法拆分人形应用",
+          "amount": 325415663.13,
+          "currency": "CNY",
+          "unit": "元",
+          "missingReason": null,
+          "sourceVersion": "GD24-original",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        },
+        {
+          "id": "C02",
+          "company": "green",
+          "node": "rotary",
+          "concept": "机电一体化产品",
+          "grade": "A",
+          "text": "FY2024 机电一体化产品收入52,593,288.84元，占合并收入约13.58%（计算值）。",
+          "source": "GD24",
+          "locator": "PDF第214页收入分解；第10页机电一体化旋转执行器经营描述",
+          "boundary": "产品组含多类执行器；无法把全部收入归到人形机器人关节。",
+          "period": "FY2024",
+          "quote": "机电一体化产品 52,593,288.84",
+          "quoteNote": "表格及换行空白归一化；保留原义",
+          "relationId": "green-product-mechatronics",
+          "metricKey": "revenue",
+          "evidenceCategory": "收入",
+          "businessStage": "收入确认",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "disclosedName": "机电一体化产品",
+          "scope": "原披露产品组；无法拆分人形应用",
+          "amount": 52593288.84,
+          "currency": "CNY",
+          "unit": "元",
+          "missingReason": null,
+          "sourceVersion": "GD24-original",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        },
+        {
+          "id": "C03",
+          "company": "hds",
+          "node": "reducer",
+          "concept": "精密减速器",
+          "grade": "A",
+          "text": "截至2025年3月财年，减速器收入42,304百万日元，占合并收入76.0%。",
+          "source": "HD25",
+          "locator": "PDF第5页 Overview of Operating Results，speed reducers；金额为披露约数",
+          "boundary": "减速器业务组不限于人形应用；不可据此认定特定整机客户或人形市场份额。",
+          "period": "截至2025-03财年",
+          "quote": "speed reducers totaled ¥42,304 million",
+          "quoteNote": "短摘录；以原文上下文为准",
+          "relationId": "hds-product-reducer",
+          "metricKey": "revenue",
+          "evidenceCategory": "收入",
+          "businessStage": "收入确认",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "disclosedName": "speed reducers",
+          "scope": "原披露产品组；无法拆分人形应用",
+          "amount": 42304000000,
+          "currency": "JPY",
+          "unit": "日元",
+          "missingReason": null,
+          "sourceVersion": "HD25-results",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        }
+      ],
+      "draft": {
+        "id": "cost",
+        "title": "关节降本，零部件利润一定改善吗？",
+        "short": "关节成本传导",
+        "summary": "成本与售价共同变化，放量可能伴随价格竞争。",
+        "citations": [
+          "C01",
+          "C02",
+          "C03"
+        ],
+        "facts": [
+          "样本覆盖减速器及机电一体化产品。"
+        ],
+        "inference": "规模化可能降低单位制造成本；若客户压价更快或良率不足，利润仍可能承压。缺少BOM与合同，暂不输出净利润弹性。",
+        "gaps": [
+          "BOM、良率、稼动率与产品ASP",
+          "客户合同、库存成本和研发费用"
+        ],
+        "watch": "分别跟踪ASP、单位成本、产品毛利及现金回款。",
+        "route": "scenario",
+        "assumptions": [
+          "单位制造成本可能随规模下降，但售价、良率与产品组合也会变化。"
+        ]
+      },
+      "validation": {
+        "referencesResolve": true,
+        "hasSeparateHypotheses": true,
+        "recordCanBeCreated": true
+      },
+      "semanticReview": "开发阶段已核对出处与边界；尚待实际研究员复核，不是AI准确率"
+    },
+    {
+      "id": "policy",
+      "input": [
+        {
+          "id": "C01",
+          "company": "green",
+          "node": "reducer",
+          "concept": "谐波减速器及金属部件",
+          "grade": "A",
+          "text": "FY2024 产品收入325,415,663.13元，占合并收入约84.00%（计算值）。",
+          "source": "GD24",
+          "locator": "PDF第214页「营业收入、营业成本的分解信息」；人民币元",
+          "boundary": "含金属部件，涵盖多种下游；不等同人形机器人减速器收入。",
+          "period": "FY2024",
+          "quote": "谐波减速器及金属部件 325,415,663.13",
+          "quoteNote": "表格及换行空白归一化；保留原义",
+          "relationId": "green-product-harmonic-metal",
+          "metricKey": "revenue",
+          "evidenceCategory": "收入",
+          "businessStage": "收入确认",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "disclosedName": "谐波减速器及金属部件",
+          "scope": "原披露产品组；无法拆分人形应用",
+          "amount": 325415663.13,
+          "currency": "CNY",
+          "unit": "元",
+          "missingReason": null,
+          "sourceVersion": "GD24-original",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        },
+        {
+          "id": "C03",
+          "company": "hds",
+          "node": "reducer",
+          "concept": "精密减速器",
+          "grade": "A",
+          "text": "截至2025年3月财年，减速器收入42,304百万日元，占合并收入76.0%。",
+          "source": "HD25",
+          "locator": "PDF第5页 Overview of Operating Results，speed reducers；金额为披露约数",
+          "boundary": "减速器业务组不限于人形应用；不可据此认定特定整机客户或人形市场份额。",
+          "period": "截至2025-03财年",
+          "quote": "speed reducers totaled ¥42,304 million",
+          "quoteNote": "短摘录；以原文上下文为准",
+          "relationId": "hds-product-reducer",
+          "metricKey": "revenue",
+          "evidenceCategory": "收入",
+          "businessStage": "收入确认",
+          "supportDirection": "支持",
+          "reviewStatus": "已确认",
+          "validity": {
+            "conflict": false,
+            "superseded": false
+          },
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "disclosedName": "speed reducers",
+          "scope": "原披露产品组；无法拆分人形应用",
+          "amount": 42304000000,
+          "currency": "JPY",
+          "unit": "日元",
+          "missingReason": null,
+          "sourceVersion": "HD25-results",
+          "factVersion": 1,
+          "checkedAt": "2026-10-28",
+          "ingestedAt": null,
+          "reviewer": "开发阶段原文核对（非研究员签字）",
+          "reviewReason": "按所列原文确认摘录与范围；业务判断仍需研究员复核",
+          "gapCheck": null
+        }
+      ],
+      "draft": {
+        "id": "policy",
+        "title": "产业支持政策能直接变成公司收入吗？",
+        "short": "政策落地验证",
+        "summary": "试点或补助与客户采购、验收和收入确认并不相同。",
+        "citations": [
+          "C01",
+          "C03"
+        ],
+        "facts": [
+          "减速器产品有既有收入，具体支持政策资格未收录。"
+        ],
+        "inference": "政策影响是条件性机制推演。先核对政策对象、支付和验收条件，再看采购合同及收入；不能把支持额度当公司营收。",
+        "gaps": [
+          "具体政策文本、生效与适用资格",
+          "合同、验收和支付安排"
+        ],
+        "watch": "新增政策原文后核查对象，按采购与验收里程碑追踪。",
+        "route": "scenario",
+        "assumptions": [
+          "政策支持能转化为付费采购，且公司满足资格与验收条件；当前未证实。"
+        ]
+      },
+      "validation": {
+        "referencesResolve": true,
+        "hasSeparateHypotheses": true,
+        "recordCanBeCreated": true
+      },
+      "semanticReview": "开发阶段已核对出处与边界；尚待实际研究员复核，不是AI准确率"
+    }
+  ],
+  "annualReplay": {
+    "candidate": {
+      "id": "GREEN25_GROUP",
+      "company": "green",
+      "node": "reducer",
+      "concept": "谐波减速器及金属件",
+      "grade": "A",
+      "text": "FY2025「谐波减速器及金属件」营业收入476,486,798.69元；表中披露同比46.42%。",
+      "source": {
+        "title": "绿的谐波2025年年度报告（更正后）",
+        "publisher": "公司法定披露 · 巨潮资讯",
+        "date": "2026-07-10",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-07-10/1225418036.PDF"
+      },
+      "locator": "PDF第37页「主营业务分产品情况」；第185页附注同项为476,486,798.68元，存在0.01元列示差异，保留冲突提示并采用第37页",
+      "boundary": "这是FY2024→FY2025跨报告期观察，不代表该收入被更正。2025第37页项目名为“谐波减速器及金属件”，FY2024附注为“谐波减速器及金属部件”；未按人形应用拆分，范围差异仍需核查。",
+      "period": "FY2025",
+      "quote": "谐波减速器及金属件 476,486,798.69",
+      "quoteNote": "第37页表格与换行空白归一化",
+      "relationId": "green-product-harmonic-metal",
+      "metricKey": "revenue",
+      "evidenceCategory": "收入",
+      "businessStage": "收入确认",
+      "supportDirection": "支持",
+      "reviewStatus": "待复核",
+      "validity": {
+        "conflict": true,
+        "superseded": false
+      },
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "disclosedName": "谐波减速器及金属件",
+      "scope": "原披露产品组；无法拆分人形应用",
+      "amount": 476486798.69,
+      "currency": "CNY",
+      "unit": "元",
+      "missingReason": null,
+      "sourceVersion": "GD25-corrected-20260710",
+      "factVersion": 1,
+      "checkedAt": "2026-10-28",
+      "ingestedAt": null,
+      "reviewer": null,
+      "reviewReason": null,
+      "gapCheck": null,
+      "updateType": "annual",
+      "replay": true,
+      "supersedes": null
+    },
+    "fieldValidation": "GREEN25_GROUP",
+    "changeType": "跨报告期历史披露回放",
+    "samePeriodRevision": "未载入FY2025原版，不判定该收入是否更正",
+    "sourceConflict": "第37页与第185页存在0.01元列示差异，保留冲突标记"
+  }
+}

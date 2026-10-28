@@ -1,0 +1,8 @@
+{
+  "duration": 12.044,
+  "frameCount": 3,
+  "errors": [
+    "locator.scrollIntoViewIfNeeded: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-trend-point=\"2025Q2\"]')\u001b[22m\n"
+  ],
+  "checkedAt": "2026-10-28T13:45:28.307Z"
+}

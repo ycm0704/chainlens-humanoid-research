@@ -1,0 +1,54 @@
+// Optional real-browser smoke test; not included in the dependency-free unit suite.
+// CHAINLENS_RUNTIME_PACKAGE may point to a package.json with playwright installed.
+import {createRequire} from 'node:module';
+import {readFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import assert from 'node:assert/strict';
+const require=createRequire(process.env.CHAINLENS_RUNTIME_PACKAGE||import.meta.url);
+const {chromium}=require('playwright');
+const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+const page=await browser.newPage({viewport:{width:1440,height:1100}}),errors=[],checks=[];
+page.on('pageerror',e=>errors.push(e.message));
+const check=(name,value)=>{assert(value,name);checks.push(name)};
+try{
+ await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
+ check('local humanoid product loads',/人形机器人/.test(await page.locator('h1').innerText()));
+ check('provider snapshot is visibly dated',/2026-10-28/.test(await page.locator('.topright .provider-badge').innerText()));
+ await page.locator('.nav [data-view="compare"]').click();
+ check('two real quarterly series',await page.locator('.compare-plot svg path').count()===2);
+ await page.locator('[data-compare-quarter="2"]').hover();
+ check('hover explains numbers and periods',/2025-07-01 — 2025-09-30/.test(await page.locator('#compare-tooltip').innerText()));
+ await page.locator('[data-compare-quarter="3"]').click();
+ check('chart click opens derivation detail',/本期累计值 − 上季累计值/.test(await page.locator('.compare-quarter-detail').innerText()));
+ await page.locator('[data-expand-finance]').first().click();
+ check('annual table continues to evidence and notices',await page.locator('.provider-expanded [data-ifind-company-notices]').count()===1);
+ await page.locator('.provider-expanded [data-ifind-row]').click();
+ check('provider field/raw value visible',/营业收入（单位：元）/.test(await page.locator('#modal').innerText())&&/5.7071亿/.test(await page.locator('#modal').innerText()));
+ const raw=await page.locator('#modal .provider-request a').getAttribute('href');check('raw response opens by immutable hash',/^ifind\/raw\/[a-f0-9]{64}\.json$/.test(raw));
+ await page.locator('#modal .close').click();
+ const download=page.waitForEvent('download');await page.locator('#export').click();const file=await(await download).path();check('comparison export uses chosen companies',/绿的谐波[\s\S]*双环传动/.test(await readFile(file,'utf8')));
+ await page.locator('[data-compare-preset="sanhua,tuopu"]').click();
+ check('new companies use actual financial data',/310.1174亿/.test(await page.locator('.provider-finance-table').innerText()));
+ await page.locator('[data-compare-metric="profit"]').click();check('profit chart available',/归母净利润 \/ 收入/.test(await page.locator('.comparison-chart h2').innerText()));
+ await page.locator('[data-compare-scope="humanoid"]').click();check('human-specific gap does not reuse group chart',await page.locator('.compare-plot').count()===0&&/尚未核验/.test(await page.locator('.compare-scope-panel').innerText()));
+ await page.locator('[data-compare-scope="group"]').click();await page.locator('[data-compare-preset="green,hds"]').click();
+ check('cross-market period mismatch and missing series exposed',/2024-04-01 — 2025-03-31/.test(await page.locator('.compare-boundary').innerText())&&await page.locator('.compare-missing').count()===1);
+ await page.locator('[data-compare-preset="ubtech,tsla"]').click();
+ check('HK reporting currency preserved, not trading currency',/CNY/.test(await page.locator('.provider-finance-table tbody tr').first().innerText())&&/USD/.test(await page.locator('.provider-finance-table tbody tr').last().innerText()));
+ await page.locator('.compare-universe summary').first().click();check('ten financial companies accessible',await page.locator('[data-compare-company]').count()===10);
+ await page.locator('[data-compare-preset="green,shuanghuan"]').click();await page.locator('[data-compare-metric="revenue"]').click();
+ await page.screenshot({path:fileURLToPath(new URL('../../链证_iFinD公司对比_本地预览.png',import.meta.url)),fullPage:true});
+ await page.locator('.nav [data-view="library"]').click();await page.locator('#document-company').selectOption('tuopu');
+ check('provider announcements visible with review boundary',await page.locator('.provider-notice-row').count()===2);
+ await page.locator('[data-ifind-notice]').first().click();check('summary is not claimed to be original quote',/不自动作为公告原文引句/.test(await page.locator('#modal').innerText()));await page.locator('#modal .close').click();
+ await page.locator('.nav [data-view="explore"]').click();await page.locator('.catalog-table [data-company="tuopu"]').first().click();check('company profile includes iFinD annual snapshot',/295.8146亿/.test(await page.locator('.provider-company').innerText()));await page.locator('#modal .close').click();
+ await page.locator('.nav [data-view="ai"]').click();await page.locator('#question').fill('拓普集团2025年营业收入是多少');await page.locator('#ask').click();check('AI evidence lookup includes provider snapshot without claiming live inference',await page.locator('.ai-query-answer .provider-company').count()===1);
+ await page.locator('.topright [data-ifind-status]').click();check('source conflict visibly quarantined',/已隔离/.test(await page.locator('#modal').innerText()));
+ await page.route('**/ifind-snapshot.json',route=>route.fulfill({status:503,body:'injected failure'}));await page.locator('#ifind-reload').click();
+ check('failed reload retains previous snapshot',/2026-10-28/.test(await page.locator('.topright .provider-badge').innerText()));
+ await page.locator('.nav [data-view="compare"]').click();check('failure is surfaced in comparison',/HTTP 503/.test(await page.locator('.content>.provider-warning,.content .provider-warning').first().innerText()));
+ await page.unroute('**/ifind-snapshot.json');
+ await page.setViewportSize({width:390,height:844});check('mobile shell has no horizontal page overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+ check('no runtime exceptions',errors.length===0);
+ console.log(JSON.stringify({passed:checks.length,checks,errors},null,2));
+}finally{await browser.close();}
